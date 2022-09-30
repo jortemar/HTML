@@ -1,0 +1,30 @@
+html {
+    font-size: 100%; /*100% equivale a 16px;
+                    62'5% equivale a 10px*/
+
+}
+
+.contenedor {
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.div-1 {
+    color:blue;
+    width: 70%; /*respecto al tamaño que metemos en html */
+    font-size: 2.25 rem;  /*se toma como referencia el tamaño del html (2'25 veces 
+                            el font de html) font-size=36px*/
+    text-align: justify;
+    
+}
+
+h1{
+    text-align:center;
+}
+
+h2 {
+    font-size: 100%;
+    text-align:center;
+}
