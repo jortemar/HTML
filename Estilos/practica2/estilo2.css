@@ -1,0 +1,39 @@
+body {
+    font-size:100%; /* 100% equivale a 16px; *62,5% equivale a 10px*/
+    background-color: #333;
+    color:white;
+}
+
+header.general {
+    font-weight:bold;
+    color:#fc3;
+}
+
+section.principal {
+    margin:20px;
+}
+
+h2.encabezado2{
+    font-size:2.5em;
+    color:#fc3;
+}
+hr{
+    color:#fc3;
+}
+
+.rojo {
+    color:red;
+}
+
+p.tama250 {
+    font-size:250%;
+}
+p.tama2em {
+    font-size:2em;
+}
+p.tanaS0px {
+    font-size:50px;
+}
+p.tama3pc {
+    font-size:3pc;
+}
