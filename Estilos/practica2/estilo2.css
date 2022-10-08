@@ -31,9 +31,22 @@ p.tama250 {
 p.tama2em {
     font-size:2em;
 }
-p.tanaS0px {
+p.tama50px {
     font-size:50px;
 }
 p.tama3pc {
     font-size:3pc;
 }
+p.tama40pt {
+    font-size:40pt;
+}
+p.tama3mm {
+    font-size:3mm;
+}
+p.tama1cm {
+    font-size:1cm;
+}
+p.tama1in {
+    font-size:1in;
+}
+
