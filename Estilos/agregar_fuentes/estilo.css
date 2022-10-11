@@ -42,4 +42,10 @@ hr{
     src: url('fuentes/espacial.ttf') format('truetype');
 }
 
+p.lcd{
+    font-family:lcd;
+}
+h4.espacial{
+    font-weith:bold;
+}
 
