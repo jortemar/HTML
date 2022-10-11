@@ -1,0 +1,45 @@
+body {
+    font-size:100%; /* 100% equivale a 16px; *62,5% equivale a 10px*/
+    background-color: #333;
+    color:white;
+}
+
+header.general {
+    font-weight:bold;
+    color:#fc3;
+}
+
+section.principal {
+    margin:20px;
+}
+
+h1.encabezado {
+    font-size:2.5rem;
+    font-variant:small-caps;
+}
+
+h2.encabezado2{
+    font-size:2em;
+    color:#fc3;
+}
+
+hr{
+    color:#fc3;
+}
+
+.margen {
+    margin-left:50px;
+}
+
+
+@font-face{
+    font-family:lcd;
+    src: url('fuentes/lcd.ttf') format('truetype');
+}
+
+@font-face{
+    font-family:espacial;
+    src: url('fuentes/espacial.ttf') format('truetype');
+}
+
+
