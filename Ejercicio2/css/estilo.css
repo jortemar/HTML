@@ -1,0 +1,35 @@
+body {
+    background-image:url(../imagenes/fondo.png);
+    background-color: #D0D8E9;
+
+    font-size:100%;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.div-1 {
+    font-family: Tahoma;
+    font-size: 0.85em;
+    color:#3B5998;
+    text-align: justify;
+}
+
+.div-2 {
+    text-align:center;
+}
+
+p span {
+    font-weight:bold;
+}
+
+.subrayado {
+    text-decoration:underline;
+}
+
+[href] {
+    text-decoration: none;
+    font-weight:bold;
+}
