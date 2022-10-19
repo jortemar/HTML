@@ -1,7 +1,10 @@
-body {
+html {
     background-image:url(../imagenes/fondo.png);
-    background-color: #D0D8E9;
+    background-size:cover;
+}
 
+body {
+    background-color: #D0D8E9;
     font-size:100%;
 }
 
@@ -17,16 +20,12 @@ body {
     text-align: justify;
 }
 
-.div-2 {
+.div-2, h1 {
     text-align:center;
 }
 
-p span {
-    font-weight:bold;
-}
-
-.subrayado {
-    text-decoration:underline;
+.cursiva {
+    font-style: italic;
 }
 
 [href] {
