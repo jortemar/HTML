@@ -1,0 +1,20 @@
+body {
+    font-size: 100%;
+}
+
+table, td, th {
+    border: 2px solid;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+table {
+    width: 60%;
+    height: 100px;
+}
+
+
+
+th {
+    font-size: 40%;
+}
