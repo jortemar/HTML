@@ -1,0 +1,50 @@
+body {
+    display:flex;
+    justify-content: center;
+    background-image: url(Elementos/fondo21.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:600px;
+    font-size:140%;
+}
+
+.contenedor {
+    text-align:justify;
+    color:rgb(199, 14, 14);
+}
+
+h1,h2,p {
+    text-align:center;
+}
+
+h1 {
+    font-size:45px;
+    
+}
+
+img {
+    text-align:center;
+    width:280px;
+    height:405px;
+}
+
+.imagen {
+    text-align:center;
+}
+
+.linea {
+    border-top: 3px solid brown;
+    width:400px;
+    margin: 20px auto 0 auto;
+}
+
+.linea2 {
+    border-top: 3px solid brown;
+    width:400px;
+    padding-top: 20px;
+    margin: 5px auto 0 auto;
+}
+
+
+
+

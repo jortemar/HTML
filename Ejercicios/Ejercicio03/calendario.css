@@ -1,9 +1,25 @@
 body {
-    font-size: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.contenedor {
+    text-align:justify;     
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:3em;
+    color:#678d45d6;
+    position:relative;
+    right:50px;
+    top: 45px;
+    z-index:1;
 }
 
 table, td {
-    border: 5px;
+    border: 3px;
+    border-color:white;
     border-style: ridge;
     border-collapse: collapse;
     text-align: right;
@@ -19,14 +35,14 @@ th {
     color:darkgrey;
     font-size: 70%;
     height: 1.4em;
-    background-color:white;
+    background-color:none;
 }
 
 td {
     font-size: 300%;
     color:rgb(198, 216, 144);
     height: 1.2em;
-    padding-left: 80px;
+    padding-left: 90px;
 }
 
 table colgroup col:nth-child(6) {
@@ -37,30 +53,18 @@ table colgroup col:nth-child(7) {
     background-color: #678d45d6;
 }
 
-h1 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:3em;
-    color:#678d45d6;
+img {
+    width:340px;
     position:relative;
-    right:50px;
+    bottom: 70px;
+    right: 190px;  
 }
 
-.contenedor {
-    display:flex;
-    justify-content: center;   
-}
-
-.div-1 {
-    text-align:justify;
-}
-.montar {
+.tabla {
     position:relative;
-    bottom: 100px;
-    right: 180px;
+    bottom:290px;
 }
 
-.empujarTabla {
-    position:relative;
-    bottom:250px;
+.blanco {
+    background-color:white;
 }
-
