@@ -1,25 +1,45 @@
+@font-face {
+    font-family:work;
+    src: url("Elementos/work.ttf");
+}
+
 body {
+    background-color:#333;
     display:flex;
     justify-content: center;
     background-image: url(Elementos/fondo21.jpg);
     background-repeat:no-repeat;
     background-position:center;
+    font-family:work;
     background-size:600px;
     font-size:140%;
 }
 
 .contenedor {
     text-align:justify;
-    color:rgb(199, 14, 14); 
+    color:#731600; 
 }
 
-h1,h2,p {
+h1,h2,h3,h4 {
     text-align:center;
 }
 
 h1 {
+    font-size:80px;
+    margin: 120px 0 0 0;    
+}
+
+h2 {
+    font-size:47px;
+}
+
+h3 {
+    font-size:50px;
+    margin: 25px 0 -50px 0;
+}
+
+h4 {
     font-size:45px;
-    
 }
 
 img {
@@ -30,21 +50,40 @@ img {
 
 .imagen {
     text-align:center;
+    margin:-5px;
 }
 
 .linea {
-    border-top: 3px solid brown;
-    width:400px;
-    margin: 20px auto 0 auto;
+    border-top: 3px solid #731600;
+    width:500px;
+    margin: -25px auto 0 auto;
 }
 
 .linea2 {
-    border-top: 3px solid brown;
-    width:400px;
+    border-top: 3px solid #731600;
+    width:500px;
     padding-top: 20px;
     margin: 5px auto 0 auto;
 }
 
+.linea3 {
+    border-top: 3px solid #731600;
+    width:500px;
+    margin: 20px auto 0 auto;
+}
+
+.linea4 {
+    border-top: 3px solid #731600;
+    width:500px;
+    
+    margin: 5px auto 0 auto;
+}
+
+span {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-thickness: 0.5em;
+}
 
 
 
