@@ -14,8 +14,8 @@ header {
     border:1px solid black;
     /*border-bottom:1px solid black;*/
     width:100%;
-    height: 40%;
-    /*height:50px;*/
+    
+    height:50px;
 }
 
 header div {
@@ -32,9 +32,8 @@ header div {
 }
 
 .barra {
-    padding:5px;
+    padding:50px;
     margin-top:9px;
-    
 }
 
 .imagen {
@@ -56,7 +55,8 @@ header div {
     border:1px solid black;
     margin-top:12px;
     width: 30%;
-    /*float:right;*/
+    float:right;
+    
 }
 
 .enlacesMenu {
