@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.cont{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    background-color: blue;
+    
+    align-items: center; /* se alinea verticalmente al centro */
+    /* align-items: flex-start; alinea al inicio de la caja */
+    /* align-items: flex-end; alinea al final de la caja */
+    /* align-items: stretch; estira el elemento para que ocupe toda la caja */
+    /* align-items: baseline; alinea a la base de los elementos de la caja */
+
+
+    justify-content: center; /* center the items in the container */
+    /* justify-content: flex-start;alinea a la izquierda */
+    /* justify-content: flex-end; alinea a la derecha */
+    /* justify-content: space-between; alinea primero y ultimo en sus bordes y el resto centrados*/
+    /* justify-content: space-around; alinea primero y ultimo en sus bordes y el resto centrados con espacio entre ellos*/
+    /* justify-content: space-evenly; alinea primero y ultimo en sus bordes y el resto centrados con espacio entre ellos y alrededor de la caja*/
+    /* justify-content: stretch; estira los elementos para que ocupen toda la caja */
+
+
+    /* flex-direction: row; los elementos se alinean horizontalmente */
+    /* flex-direction: column; los elementos se alinean verticalmente */
+    /* flex-direction: row-reverse; los elementos se alinean horizontalmente pero al reves */
+    /* flex-direction: column-reverse; los elementos se alinean verticalmente pero al reves */
+    /* flex-wrap: nowrap; los elementos no se ajustan a la caja */
+    /* flex-wrap: wrap; los elementos se ajustan a la caja */
+    /* flex-wrap: wrap-reverse; los elementos se ajustan a la caja pero al reves */
+    /* flex-flow: row wrap; los elementos se alinean horizontalmente y se ajustan a la caja */
+    /* flex-flow: column wrap; los elementos se alinean verticalmente y se ajustan a la caja */ 
+    /* flex-flow: row wrap-reverse; los elementos se alinean horizontalmente y se ajustan a la caja pero al reves */
+    /* flex-flow: column wrap-reverse; los elementos se alinean verticalmente y se ajustan a la caja pero al reves */
+    /* flex-flow: row-reverse wrap; los elementos se alinean horizontalmente pero al reves y se ajustan a la caja */
+    /* flex-flow: column-reverse wrap; los elementos se alinean verticalmente pero al reves y se ajustan a la caja */
+    /* flex-flow: row-reverse wrap-reverse; los elementos se alinean horizontalmente pero al reves y se ajustan a la caja pero al reves */
+    /* flex-flow: column-reverse wrap-reverse; los elementos se alinean verticalmente pero al reves y se ajustan a la caja pero al reves */
+    
+
+    /*order: *numero*: sirve para ordenar los elementos de la caja*/
+    /*flex-grow: *numero*: sirve para que los elementos se expandan en la caja "dar prioridad de espacio"*/
+    /*flex-shrink: *numero*: sirve para que los elementos se contraigan en la caja "dar prioridad de espacio" "no se encojera pero el resto si"*/
+    /*flex-basis: *numero*: sirve para darle un tamaño base a los elementos de la caja*/
+/*https://www.youtube.com/watch?v=-nVJwYKx6H8 video tutorial*/
+
+}
+.a{
+    width: 10%; 
+    height: 100%;
+    margin: 10px;
+    background-color: red;
+    line-height: 60px;/*line-height: 60px; es para que el texto se alinee verticalmente al centro*/
+    text-align: center;
+}
+/* ejemplo de como hacer algo como la tarea anterior: fotos y debajo la descripcion*/
+.cont2{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+    margin: auto;/* si se quisiera separar un poco los div se quitaria aunto y se pondria margin-top para separarlo del div superior*/
+}
+.b{
+    width: 10%; 
+    height: 100%;
+    margin: 10px;
+    background-color: red;
+    text-align: center;
+    
+}
