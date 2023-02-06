@@ -33,6 +33,14 @@
             background-color: pink;
         }
 
+        .largo {
+            height:200px;
+        }
+
+        .vertical {
+            height:300px;
+        }
+
         /*
         @media only screen and(min-width: 576px) {
             .example {background:green;}
@@ -89,26 +97,38 @@
         <div class="border col-lg-auto green">al contenido de las celdas</div>
     </div>
 
-    
+    <!-- SALTO DE LÍNEA -->
     <div class="row">
-        <!-- Ocupamos 5/12 de la fila -->
         <div class="border col-md-3">1</div>
-        <div class="border col-md-2">2</div>
-        <!-- Forzamos el salto de línea -->
         <div class="w-100"></div>
-        <!-- Ocupamos otra vez 5/12 pero en una nueva línea -->
+        <div class="border col-md-2">2</div>
         <div class="border col-md-3">3</div>
         <div class="border col-md-2">4</div>
     </div>
 
-    <div class="row g-5">
-        <div class="border col-md-6"><h3>Elemento con gutter</h3></div>
-        <div class="border col-md-6"><h3>Elemento con gutter</h3></div>
+    <div class="row">
+        <div class="col-md-3 celda green"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2 celda red"></div>
+        <div class="col-md-3 celda black"></div>
+        <div class="col-md-2 celda red"></div>
+    </div>
+
+    <!-- GUTTER (el número que acompaña a 'g' puede variar de 0 a 5, variando así el padding)-->
+    <div class="row">
+        <div class="col-md-6"><h3>Elemento con Gutter</h3></div>
+        <div class="col-md-6"><h3>Elemento con Gutter</h3></div>
     </div>
     <div class="row g-0">
         <div class="border col-md-6"><h3>Elemento sin gutter</h3></div>
         <div class="border col-md-6"><h3>Elemento sin gutter</h3></div>
     </div>
+    <div class="row g-5">
+        <div class="border col-md-6"><h3>Elemento con gutter</h3></div>
+        <div class="border col-md-6"><h3>Elemento con gutter</h3></div>
+    </div>
+    
 
     <div class="container-fluid">
         <div class="row">
@@ -132,8 +152,66 @@
         <div class="border justify-content-around col-md">Espacio equitativo</div>
         <div class="border justify-content-between col-md">Equitativo pegado a los extremos</div>
     </div>
+
+    <div class="row">
+        <div class="border col-md-4 order-3 green">Primer elemento. Posición tercera</div>
+        <div class="border col-md-4 order-1 yellow">Segundo elemento. Posición primera</div>
+        <div class="border col-md-4 order-2">Tercer elemento. Posición segunda</div>
+    </div>
+
+    
+    <!-- ALINEACIÓN VERTICAL -->
+    <!-- Acepta start, end, center -->
+    <div class="row green vertical align-items-center">
+        <div class="border col largo red"></div>
+        <div class="border col largo yellow"></div>
+        <div class="border col largo blue"></div>
+    </div> 
+          
+    <!-- ALINEACIÓN HORIZONTAL-->
+    <!-- Acepta start, end, center, around, between -->
+    <div class="row justify-content-around">
+        <div class="border col-md-2 largo red"></div>
+        <div class="border col-md-2 largo yellow"></div>
+        <div class="border col-md-2 largo blue"></div>
+    </div>
     
     
+
+
+
+    <!--
+    <div class="container">
+        <div class="row">
+            <div class="col blue"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 red grande"></div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col black"></div>
+                    <div class="col green"></div>
+                    <div class="col black"></div>
+                </div>
+                <div class="row">
+                    <div class="col yellow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 blue grande"></div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col green"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col yellow"></div>
+            </div>
+        </div>
+    </div>
+    
+    -->
 
 
 

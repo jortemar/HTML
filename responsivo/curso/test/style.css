@@ -1,0 +1,41 @@
+.container {
+    border:1px solid black;
+}
+
+
+
+.row {
+    height: 200px;
+}
+
+.col {
+    height:100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color:black;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.row div h3 {
+    border: 1px solid black;
+}
