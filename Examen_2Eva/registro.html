@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <a class="navbar-brand" href="#">
+                    <img src="./recursos/logo.svg" class="pb-1" alt="Bootstrap" width="30" height="24">
+                  </a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cita.html">Obtén una cita</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Escapada Romántica
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Playa</a></li>
+                      <li><a class="dropdown-item" href="#">Montaña</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Hoteles</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./registro.html">Registro</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    <br><br>
+
+    <!-- FORMULARIO -->
+    <div class="row">
+        <div class="col-6">
+            <img src="./recursos/bg-couple.jpg" class="img-fluid" alt="">
+        </div>   
+        <div class="col-6">
+            <div class="row">
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                      <label for="inputName" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="inputName" required>
+                      <div class="invalid-feedback">
+                        Por favor rellene este campo
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <label for="inputApellidos" class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" id="inputApellidos" required>
+                      <div class="invalid-feedback">
+                        Por favor rellene este campo
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="inputUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" placeholder="@" id="inputApellidos" required>
+                        <div class="invalid-feedback">
+                            Por favor rellene este campo
+                          </div>
+                    </div>
+                    <div class="col-md-7">
+                      <label for="inputCiudad" class="form-label">Ciudad</label>
+                      <input type="text" class="form-control" id="inputCiudad" required>
+                      <div class="invalid-feedback">
+                        Por favor rellene este campo
+                      </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label for="inputMunicipio" class="form-label">Municipio</label>
+
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Choose</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="inputCP" class="form-label">CP</label>
+                        <input type="text" class="form-control" id="inputCP" required>
+                        <div class="invalid-feedback">
+                            Por favor rellene este campo
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <label for="inputCP" class="form-label">Género</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Hombre
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Mujer
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <label for="inputCP" class="form-label">Estoy buscando</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                              Hombre
+                            </label>
+                          </div>
+                          <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                              Mujer
+                            </label>
+                          </div>
+                    </div>
+
+                    <div class="col-4">
+                        <label for="inputEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" required>
+                        <div class="invalid-feedback">
+                            Por favor rellene este campo
+                        </div>                    
+                    </div>
+                   
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <label class="form-check-label" for="gridCheck">
+                          Agree to terms and conditions
+                        </label>
+                      </div>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-success tn-primary">Sign in</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+    <script>
+        (() => {
+            'use strict'
+        
+            const forms = document.querySelectorAll('.needs-validation');
+
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    // si el formulario no es válido se cancela el evento
+                    if (!form.checkValidity()) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    // si el formulario es válido se le añadirá esta clase
+                    form.classList.add('was-validated');
+                }, false);
+            })
+        })()
+    </script>
+</body>
+</html>
