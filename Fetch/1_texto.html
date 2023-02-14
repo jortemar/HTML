@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH (Respuesta tipo Texto)</title>
+</head>
+
+<body>
+    <header>
+        <h1>La poesía del día</h1>
+    </header>
+
+    <main>
+        <pre>
+
+        </pre>
+    </main>
+
+    <div class="error"></div>
+
+    <script>
+        //MANIPULAR RESPUESTAS TIPO TEXTO
+        //Hace una petición fetch de una poesía que obtiene en formato texto
+        let pre = document.querySelector("pre");
+        let capaError = document.getElementById("Error");
+        fetch("https://jorgesanchez.net/servicios/poesia.php")
+            .then(respuesta => respuesta.text()) //Si la promesa se cumple se ejecuta el siguiente then
+            .then(texto => {
+                pre.innerHTML = texto;
+            })
+            .catch(error => { capaError.innerHTML = error });
+    </script>
+</body>
+
+</html>

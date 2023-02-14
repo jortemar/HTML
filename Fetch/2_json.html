@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH (Respuesta tipo JSON)</title>
+</head>
+
+<body>
+    <main>
+    </main>
+    <script>
+        //MANIPULAR RESPUESTAS EN FORMATO JSON
+
+        let main = document.querySelector("main");
+        /*const url = 'https://randomuser.me/api/';   <== URL ORIGINAL  */
+        const url = 'https://randomuser.me/api/?results=100'; //URL MODIFICADA PARA QUE MUESTRE 100 RESULTADOS
+        fetch(url)
+            .then((resp) => resp.json())
+            .then(data => {
+                let i = 0;
+                let datos = data.results;
+                console.log(datos);
+                //DESECHAMOS TODAS LAS POSICIONES DEL ARRAY HASTA ENCONTRAR UN GÉNERO FEMENINO
+                while (datos[i].gender != 'female') {
+                    i++;
+                }
+                
+                let foto = datos[i].picture.large;
+                let mail = datos[i].email;
+                let nombre = datos[i].name.first;
+                let apellido = datos[i].name.last;
+                let calle = datos[i].location.street.name;
+                let calleNumero = datos[i].location.street.number;
+                let ciudad = datos[i].location.city;
+                let estado = datos[i].location.state;
+
+
+                /* ASIGNACIÓN DE VARIABLES ORIGINAL
+                let datos = data.results[0];
+                console.log(datos);
+                let foto = datos.picture.large;
+                let mail = datos.email;
+                let nombre = datos.name.first;
+                let apellido = datos.name.last;
+                let calle = datos.location.street.name;
+                let calleNumero = datos.location.street.number;
+                let ciudad = datos.location.city;
+                let estado = datos.location.state;
+                */
+
+                main.innerHTML =
+                    `<figure>` +
+                    `<img src='${foto}' alt='foto'>` +
+                    `</figure>` +
+                    `<p>${nombre} ${apellido}</p>` +
+                    `<p>Email: ${mail}</p>` +
+                    `<p>Dirección: ${calle}, ${calleNumero}</p>` +
+                    `${ciudad} (${estado.toUpperCase()})</p>`;
+            })
+            .catch(error => {
+                main.innerHTML = `<p class='error'>${error}</p>`;
+            });
+    </script>
+</body>
+
+</html>

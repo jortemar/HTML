@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETCH (Respuesta tipo Blob)</title>
+</head>
+
+<body>
+    <main>
+        <p>Esperando datos...</p>
+    </main>
+    <script>
+        //PETICION DE BLOB BINARY LARGE OBJECT
+        let main = document.querySelector("main");
+        fetch("https://source.unsplash.com/random")
+            .then((response) => {
+                if (response.ok) {
+                    return response.blob();
+                } else {
+                    throw new Error("Los datos no llegaron bien");
+                }
+            })
+            .then((blob) => {
+                console.log(blob.type);
+                let imagen = document.createElement("img");
+                console.log(blob);
+                imagen.setAttribute("src", URL.createObjectURL(blob));
+                main.innerHTML = "";//borramos mensaje de esperando
+                main.appendChild(imagen);
+            })
+            .catch(error => {
+                main.textContent = error;
+            });
+    </script>
+</body>
+
+</html>
+
